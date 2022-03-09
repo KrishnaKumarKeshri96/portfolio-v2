@@ -7,6 +7,11 @@ const dataJSON = {
     contact: "Contact",
     language: "English",
   },
+  home: {
+    hi: "Hi, I'm",
+    job: "Full Stack Developer",
+    button: "Contact me",
+  },
 };
 
 export default dataJSON;

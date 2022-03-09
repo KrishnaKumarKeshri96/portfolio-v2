@@ -4,6 +4,7 @@ import "./scss/main.scss";
 
 import Loader from "./components/Loader";
 import Header from "./components/Header.jsx";
+import Home from "./components/Home.jsx";
 
 import dataJSON from "./data/english.js";
 
@@ -26,12 +27,17 @@ function App() {
   return loading ? (
     <Loader />
   ) : (
-    <Header
-      content={content.header}
-      setContent={setContent}
-      showLoader={showLoader}
-      showHeader={showHeader}
-    />
+    <>
+      <Header
+        content={content.header}
+        setContent={setContent}
+        showLoader={showLoader}
+        showHeader={showHeader}
+      />
+      <div className="sections">
+        <Home content={content.home} />
+      </div>
+    </>
   );
 }
 
