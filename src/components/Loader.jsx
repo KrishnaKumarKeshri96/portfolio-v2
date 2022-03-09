@@ -1,5 +1,4 @@
 import Loading from "../img/loading.svg";
-import "./Loader.scss";
 
 export default function Loader() {
   return (
