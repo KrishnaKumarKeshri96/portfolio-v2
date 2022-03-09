@@ -1,0 +1,28 @@
+/* TYPOGRAPHY */
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+/* RESET */
+
+body,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  outline: none;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
