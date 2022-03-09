@@ -1,0 +1,18 @@
+/* Main container */
+
+#root {
+  background-color: $gray-1;
+}
+
+.sections {
+  width: 100%;
+  padding-left: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+  .sections {
+    padding: 0;
+  }
+}

@@ -16,7 +16,7 @@ export default function Home({ content, refProperty }) {
             <Button
               value={content.button}
               type="solid"
-              link="mailto:camilapaladines27@gmail.com"
+              link="mailto:keshri819@gmail.com"
             />
           </div>
         </div>
