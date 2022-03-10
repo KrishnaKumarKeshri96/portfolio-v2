@@ -1,5 +1,6 @@
 import GitHub from "../img/social/github.svg";
 import LinkedIn from "../img/social/linkedin.svg";
+import whatsApp from "../img/social/whatsapp.svg";
 
 const social = [
   {
@@ -11,6 +12,11 @@ const social = [
     name: "Link to LinkedIn profile",
     link: "https://www.linkedin.com/in/krishna-kumar-keshri",
     img: LinkedIn,
+  },
+  {
+    name: "Link to whatsapp",
+    link: "https://wa.me/918553192768",
+    img: whatsApp,
   },
 ];
 
