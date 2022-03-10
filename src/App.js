@@ -7,6 +7,12 @@ import Header from "./components/Header.jsx";
 import Home from "./components/Home.jsx";
 import About from "./components/About.jsx";
 
+// Icons
+import favicon from "./img/logo.png";
+import burgerIcon from "./img/burger.svg";
+import closeIcon from "./img/x.svg";
+
+//Data
 import dataJSON from "./data/english.js";
 
 function App() {
@@ -15,13 +21,19 @@ function App() {
 
   //set data
   const [content, setContent] = useState(dataJSON);
+
+  // Show or hide the menu and the header
+  const [showBurger, setShowBurger] = useState(true);
   const [showHeader, setShowHeader] = useState(window.innerWidth > 1000);
 
-  const showLoader = (time) => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, time);
+  const showHideMenu = () => {
+    setShowBurger(!showBurger);
+    setShowHeader(showBurger);
+  };
+
+  const closeHeader = () => {
+    setShowHeader(window.innerWidth > 1000);
+    setShowBurger(window.innerWidth <= 1000);
   };
 
   // Sections references
@@ -34,6 +46,24 @@ function App() {
     contact: useRef(null),
   };
 
+  const goTo = (section) => {
+    references[section].current.scrollIntoView({ behavior: "smooth" });
+    closeHeader();
+  };
+
+  // Update showHeader and showBurger when the page is resized.
+  window.onresize = () => {
+    setShowHeader(window.innerWidth > 1000);
+    setShowBurger(window.innerWidth <= 1000);
+  };
+
+  const showLoader = (time) => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, time);
+  };
+
   window.onload = () => showLoader(1000);
   return loading ? (
     <Loader />
@@ -41,14 +71,31 @@ function App() {
     <>
       <Header
         content={content.header}
-        setContent={setContent}
-        showLoader={showLoader}
         showHeader={showHeader}
+        closeHeader={closeHeader}
+        goTo={goTo}
+        showLoader={showLoader}
       />
-      <div className="sections">
-        <Home content={content.home} refProperty={references.home} />
-        <About content={content.about} refProperty={references.about} />
-      </div>
+      <>
+        <div className="sections">
+          <Home content={content.home} refProperty={references.home} />
+          <About content={content.about} refProperty={references.about} />
+        </div>
+        <div className="mobile-header">
+          <img
+            src={favicon}
+            alt="Logo"
+            className="logo"
+            onClick={() => goTo("home")}
+          ></img>
+          <img
+            src={showBurger ? burgerIcon : closeIcon}
+            alt="Menu"
+            className="burger-close"
+            onClick={showHideMenu}
+          ></img>
+        </div>
+      </>
     </>
   );
 }
