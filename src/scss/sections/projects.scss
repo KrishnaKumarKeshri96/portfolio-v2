@@ -75,3 +75,66 @@
     color: $gray-5;
   }
 }
+
+.project-card-resources {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    color: $white;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    img {
+      width: 30px;
+    }
+
+    &:first-of-type {
+      margin-right: 0.5em;
+    }
+  }
+}
+
+.projects-container > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px dashed $gray-5;
+  background-color: $gray-2;
+  opacity: 0.7;
+  text-decoration: none;
+  color: $gray-A;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1300px) {
+  .projects-container {
+    grid-gap: 1.5em;
+  }
+}
+
+@media (max-width: 1300px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}

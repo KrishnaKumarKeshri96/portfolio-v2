@@ -22,7 +22,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   //set data
-  const [content, setContent] = useState(dataJSON);
+  const content = dataJSON;
 
   // Show or hide the menu and the header
   const [showBurger, setShowBurger] = useState(true);
