@@ -2,23 +2,24 @@ import favicon from "../img/logo.png";
 import socialGitHub from "../img/social/github.svg";
 import socialLinkedIn from "../img/social/linkedin.svg";
 
-export default function Header({
-  content,
-
-  showHeader,
-}) {
+export default function Header({ content, showHeader, goTo }) {
   return (
     <header
       className="header"
       style={{ display: showHeader ? "flex" : "none" }}
     >
-      <img className="header-logo" src={favicon} alt="Planet logo"></img>
+      <img
+        className="header-logo"
+        src={favicon}
+        alt="Planet logo"
+        onClick={() => goTo("home")}
+      ></img>
       <nav className="header-sections">
-        <p>{content.about}</p>
-        <p>{content.skills}</p>
+        <p onClick={() => goTo("about")}>{content.about}</p>
+        <p onClick={() => goTo("skills")}>{content.skills}</p>
 
-        <p>{content.projects}</p>
-        <p>{content.contact}</p>
+        <p onClick={() => goTo("projects")}>{content.projects}</p>
+        <p onClick={() => goTo("contact")}>{content.contact}</p>
       </nav>
       <nav className="social-links">
         <a
