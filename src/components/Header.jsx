@@ -21,7 +21,7 @@ export default function Header({ content, showHeader, goTo }) {
         <p onClick={() => goTo("projects")}>{content.projects}</p>
         <p onClick={() => goTo("contact")}>{content.contact}</p>
 
-        <a href="https://github.com/KrishnaKumarKeshri96">
+        <a target="_blanck" href="https://github.com/KrishnaKumarKeshri96">
           <p>{content.resume}</p>
         </a>
       </nav>
