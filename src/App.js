@@ -6,6 +6,7 @@ import Loader from "./components/Loader";
 import Header from "./components/Header.jsx";
 import Home from "./components/Home.jsx";
 import About from "./components/About.jsx";
+import Skills from "./components/Skills.jsx";
 
 // Icons
 import favicon from "./img/logo.png";
@@ -81,6 +82,7 @@ function App() {
         <div className="sections">
           <Home content={content.home} refProperty={references.home} />
           <About content={content.about} refProperty={references.about} />
+          <Skills content={content.skills} refProperty={references.skills} />
         </div>
         <div className="mobile-header">
           <img

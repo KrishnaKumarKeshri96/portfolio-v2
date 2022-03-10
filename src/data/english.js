@@ -29,6 +29,12 @@ const dataJSON = {
     cvTitle: "Download CV",
     cvFile: "",
   },
+  skills: {
+    title: "Skills",
+    languages: "Languages",
+    libraries: "Libraries & Frameworks",
+    tools: "Tools & Platforms",
+  },
 };
 
 export default dataJSON;
