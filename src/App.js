@@ -9,7 +9,7 @@ import About from "./components/About.jsx";
 import Skills from "./components/Skills.jsx";
 import Projects from "./components/Projects.jsx";
 import Contact from "./components/Contact.jsx";
-
+import Footer from "./components/Footer";
 // Icons
 import favicon from "./img/logo.png";
 import burgerIcon from "./img/burger.svg";
@@ -90,6 +90,7 @@ function App() {
             refProperty={references.projects}
           />
           <Contact content={content.contact} refProperty={references.contact} />
+          <Footer />
         </div>
         <div className="mobile-header">
           <img
