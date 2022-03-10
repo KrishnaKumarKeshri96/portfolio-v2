@@ -35,6 +35,9 @@ const dataJSON = {
     libraries: "Libraries & Frameworks",
     tools: "Tools & Platforms",
   },
+  projects: {
+    title: "Projects",
+  },
 };
 
 export default dataJSON;
