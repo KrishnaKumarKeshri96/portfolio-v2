@@ -8,6 +8,7 @@ import Home from "./components/Home.jsx";
 import About from "./components/About.jsx";
 import Skills from "./components/Skills.jsx";
 import Projects from "./components/Projects.jsx";
+import Contact from "./components/Contact.jsx";
 
 // Icons
 import favicon from "./img/logo.png";
@@ -88,6 +89,7 @@ function App() {
             content={content.projects}
             refProperty={references.projects}
           />
+          <Contact content={content.contact} refProperty={references.contact} />
         </div>
         <div className="mobile-header">
           <img

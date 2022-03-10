@@ -38,6 +38,12 @@ const dataJSON = {
   projects: {
     title: "Projects",
   },
+  contact: {
+    title: "Contact",
+    paragraph:
+      "I'm looking for new opportunities to contribute to the industry and grow as a developer. If you have a project you want me to participate in or if you have any questions let me know! I'll do my best to answer you.",
+    button: "Say hello",
+  },
 };
 
 export default dataJSON;
