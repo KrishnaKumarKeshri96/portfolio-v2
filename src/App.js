@@ -65,6 +65,7 @@ function App() {
   };
 
   window.onload = () => showLoader(1000);
+
   return loading ? (
     <Loader />
   ) : (

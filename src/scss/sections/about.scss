@@ -51,9 +51,15 @@
   .about-content {
     width: 100%;
   }
+  .about-text {
+    line-height: 1em;
+  }
 }
 
 @media (max-width: 850px) {
+  .about-text {
+    line-height: 1.5em;
+  }
   .about-content {
     grid-template-columns: 1fr;
 
@@ -71,6 +77,9 @@
 }
 
 @media (max-width: 800px) {
+  .about-text {
+    line-height: 1.8em;
+  }
   .about-content > div {
     width: 100%;
   }
