@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 import "./scss/main.scss";
 
 import Loader from "./components/Loader";
 import Header from "./components/Header.jsx";
 import Home from "./components/Home.jsx";
+import About from "./components/About.jsx";
 
 import dataJSON from "./data/english.js";
 
@@ -23,6 +24,16 @@ function App() {
     }, time);
   };
 
+  // Sections references
+  const references = {
+    home: useRef(null),
+    about: useRef(null),
+    skills: useRef(null),
+    experience: useRef(null),
+    projects: useRef(null),
+    contact: useRef(null),
+  };
+
   window.onload = () => showLoader(1000);
   return loading ? (
     <Loader />
@@ -35,7 +46,8 @@ function App() {
         showHeader={showHeader}
       />
       <div className="sections">
-        <Home content={content.home} />
+        <Home content={content.home} refProperty={references.home} />
+        <About content={content.about} refProperty={references.about} />
       </div>
     </>
   );
