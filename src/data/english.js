@@ -16,12 +16,11 @@ const dataJSON = {
     title: "About",
     paragraph1: (
       <>
-        My name is Krishna K. Keshri, I'm a <p>Hotel Management Graduate </p>{" "}
-        from Ramaiah University, Bangalore. I'm a{" "}
-        <p>MERN Stack Development enthusiast</p> and I enjoy creating things
-        that live on the internet. My interest in web development started last
-        year when I was trying to edit things on the web — taught me a lot about
-        HTML & CSS!.
+        My name is Krishna K. Keshri, I'm a <p>MERN stack Graduate </p> from
+        Masai School, Bangalore. I'm a <p>MERN Stack Development enthusiast</p>{" "}
+        and I enjoy creating things that live on the internet. My interest in
+        web development started last year when I was trying to edit things on
+        the web — taught me a lot about HTML & CSS!.
       </>
     ),
     paragraph2:
