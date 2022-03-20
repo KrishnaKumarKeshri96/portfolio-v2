@@ -18,18 +18,23 @@ import js from "../img/skills/js.png";
 import react from "../img/skills/react.png";
 import git from "../img/skills/git.png";
 import firebase from "../img/skills/firebase.png";
-import figma from "../img/skills/figma.png";
+import ts from "../img/skills/ts.svg";
+import node from "../img/skills/node.png";
+import next from "../img/skills/next.png";
 
 const skills = [
   { name: "HTML", img: html, type: 0, level: 1 },
   { name: "CSS", img: css, type: 0, level: 1 },
   { name: "SCSS", img: scss, type: 0, level: 0 },
   { name: "JavaScript", img: js, type: 0, level: 1 },
+  { name: "TypeScript", img: ts, type: 0, level: 0 },
 
   { name: "React.js", img: react, type: 0, level: 0 },
-  { name: "Git", img: git, type: 0, level: 0 },
+
+  { name: "Next.js", img: next, type: 0, level: 0 },
+  { name: "Node.js", img: node, type: 0, level: 0 },
   { name: "Firebase", img: firebase, type: 0, level: 0 },
-  { name: "Figma", img: figma, type: 0, level: 0 },
+  { name: "Git", img: git, type: 0, level: 0 },
 ];
 
 export default skills;
