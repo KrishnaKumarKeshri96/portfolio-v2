@@ -17,7 +17,7 @@ export default function ProjectCard({
         target="_blank"
         rel="noreferrer"
       >
-        <img src={img} alt={name} />
+        <video variant="top" autoPlay muted loop src={img} alt={name} />
       </a>
       <div className="project-card-data">
         <a href={website} target="_blank" rel="noreferrer">
