@@ -1,3 +1,5 @@
+import cv from "../img/Krishna-K-Keshri.pdf";
+
 const dataJSON = {
   header: {
     about: "About",
@@ -26,7 +28,7 @@ const dataJSON = {
     paragraph2:
       "My goal is to cooperate with the creation of tools that contribute to the development of a person, a company, or a nation. That's why I like to learn new technologies, and use them with the mission to improve the world a little bit, one step at a time. \n Fast Forwarding till today, I built numbers of web applications and 4 major projects. Learned a lot about teamwork, leadership, and communication. After months of rigorous training, here I am looking for an opportunity as a full stack web developer.",
     cvTitle: "Download CV",
-    cvFile: "",
+    cvFile: cv,
   },
   skills: {
     title: "Skills",
