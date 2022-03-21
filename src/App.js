@@ -69,7 +69,7 @@ function App() {
 
   window.onload = () => showLoader(1000);
 
-  // window.addEventListener("contextmenu", (e) => e.preventDefault());
+  window.addEventListener("contextmenu", (e) => e.preventDefault());
   return loading ? (
     <Loader />
   ) : (
