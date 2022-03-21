@@ -132,9 +132,20 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .projects-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-card-tools {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      margin-right: 0.7em;
+      font-size: 0.9em;
+      color: $gray-5;
+    }
   }
 }
