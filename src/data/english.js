@@ -1,4 +1,4 @@
-import cv from "../img/Krishna-K-Keshri.pdf";
+import cv from "../img/Krishna-keshri.pdf";
 
 const dataJSON = {
   header: {

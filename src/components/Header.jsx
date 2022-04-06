@@ -2,7 +2,7 @@ import favicon from "../img/logo.png";
 import socialGitHub from "../img/social/github.svg";
 import socialLinkedIn from "../img/social/linkedin.svg";
 
-import resume from "../img/Krishna-K-Keshri.pdf";
+import resume from "../img/Krishna-keshri.pdf";
 
 export default function Header({ content, showHeader, goTo }) {
   return (
