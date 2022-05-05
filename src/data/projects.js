@@ -1,4 +1,4 @@
-import cult from "../img/video/cult.gif";
+import cult from "../img/video/cult.mp4";
 import internshala from "../img/video/internshala.mp4";
 import stopwatch from "../img/video/stopwatch.mp4";
 import covid from "../img/video/covid.mp4";
